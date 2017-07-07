@@ -1,0 +1,149 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace InsultGenerator2000
+{
+    class Program
+    {
+        public static void Start()
+        {
+            Console.WriteLine("Welcome to the InsultGenerator2000 \nIf you're a pussy, close this.\nEnter \"please abuse me\" if you want to generate insults. \nIf you're a coward, type \"fuck this\" or \"im out\".");
+            Abuser();
+            Choice(Abuser());
+
+            Console.Clear();
+        }
+
+        public static string Abuser()
+        {
+            string[] Insults = new string[72];
+            Insults[0] = "I had no expectations of you, but I still ended up disappointed.";
+            Insults[1] = "I have neither the time nor the crayons to explain this to you.";
+            Insults[2] = "I envy those who've never met you.";
+            Insults[3] = "Your Family tree must be a circle.";
+            Insults[4] = "You are nothing more than the result of premature ejaculation and bad decisions.";
+            Insults[5] = "You are the evidence of the imperfection of nature, which made me chance my view on the idea of human optimization through designing genetics so we can avoid future DNA failure.";
+            Insults[6] = "There's no point in insulting you since you wouldn't understand anyway.";
+            Insults[7] = "If I wanted to kill myself I'd climb on your ego to jump to your IQ, and die before reaching it.";
+            Insults[8] = "I hope you step on a Lego.";
+            Insults[9] = "The only thing that would make you a 10 is the PH scale since you’re so basic.";
+            Insults[10] = "I bet you'd be put in Hufflepuff.";
+            Insults[11] = "You are the kind of person that turns the square in Tetris.";
+            Insults[12] = "You're like brocolli. I don't like brocolli.";
+            Insults[13] = "You are the reason why NASA is trying to find other planets to live on. ";
+            Insults[14] = "I wouldn’t even put you in the friendzone.";
+            Insults[15] = "The fact that jellyfishes spent over 6.5 million years without evolving or developing a brain is what gives hope to people like you.";
+            Insults[16] = "I love how you state the obvious with a sense of discovery.";
+            Insults[17] = "I really want to insult you, but im afraid that I wouldn't do as well as nature.";
+            Insults[18] = "Is your family tree a cactus? Because it's full of pricks.";
+            Insults[19] = "I’d like to have a duel of wits, but I see you’re unarmed.";
+            Insults[20] = "At least my mother knows who my father is.";
+            Insults[21] = "Keep rolling your eyes and maybe you'll find a brain back there.";
+            Insults[22] = "You have all the charm, grace, intellect, tact and sexual appeal of a ruptured, but still living sardine. ";
+            Insults[23] = "You are about as useless as the \"ueue\" in the word \"queue\".";
+            Insults[24] = "If you were smart enough, I would at least consider watering you once a week.";
+            Insults[25] = "You look like you crawled out of the shallow end of the gene pool.";
+            Insults[26] = "I’m trying to insult you, don’t take is as compliments";
+            Insults[27] = "Are your parents first or second cousins? Siblings, perhaps?";
+            Insults[28] = "I’m sure you’re not adopted, nobody would’ve chosen you.";
+            Insults[29] = "Eat some makeup, like that your insides will be as pretty as your face.";
+            Insults[30] = "You were supposed to be a blowjob.";
+            Insults[31] = "I hope you outlive your children.";
+            Insults[32] = "You are the proof that God has a some sick sense of humor.";
+            Insults[33] = "You're as bright as black hole and twice dense.";
+            Insults[34] = "As thick as two bricks but nowhere near as useful…";
+            Insults[35] = "I would rather be with Jar jar bings.";
+            Insults[36] = "You're not attractive enough to be that stupid.";
+            Insults[37] = "Herbivore.";
+            Insults[38] = "Hanzo main.";
+            Insults[39] = "I’d like to see things from your point of view, but I can’t stick my head so far in my rear.";
+            Insults[40] = "I rarely get angry, nor am I easy to disappoint. But being the product of 13 billion years of evolution, I was hoping you would show yourself the slightest shred of decency by acting like it.";
+            Insults[41] = "If you were a product on Amazon in the \"Other users also bought\" would also be a Chair and a Rope.";
+            Insults[42] = "*Shows mirror*";
+            Insults[43] = "So, what are you going to do with that extra chromosome?";
+            Insults[44] = "I'd insult you but it would take you all day to figure it out.";
+            Insults[45] = "My dog was not the brightest pup from the litter, but even he would get, what I am trying to point out.";
+            Insults[46] = "You ain't the sharpest tool in the shed aren’t you?";
+            Insults[47] = "You’re not the best Pogo in the box, if you see what I mean.";
+            Insults[48] = "When God decided to create the world he never expected a person as pathetic as you to be born.";
+            Insults[49] = "You thought you had a pubic hair until you started peeing out of it.";
+            Insults[50] = "You're so fat that when you were diagnosed with a flesh eating disorder, you were given 10 years to live. ";
+            Insults[51] = "I hate you almost as much as Hitler, the only difference being that Hitler knew when to kill himself.";
+            Insults[52] = "You are not worth the time it takes to call your name.";
+            Insults[53] = "You son of a thousand fathers.";
+            Insults[54] = "Did your parents threw the baby away and raised the afterbirth instead?";
+            Insults[55] = "Your insults are almost as overused as the condom your parents had the night you were made.";
+            Insults[56] = "Idiot sandwich.";
+            Insults[57] = "It’s because of people like you that shampoo has instructions.";
+            Insults[58] = "It looks like your mother's womb malfunctioned.";
+            Insults[59] = "Abortion exists because of you. Not that you helped, you were only the inspiration.";
+            Insults[60] = "I will not be surprised the day you forget how to breathe.";
+            Insults[61] = "It is impossible to underestimate you.";
+            Insults[62] = "Roses are red, violets are blue, \nI thought I was ugly and then I saw you.";
+            Insults[63] = "You save birth control companies thousands of dollars in publicity.";
+            Insults[64] = "Look up 'imbecile' in the dictionary, and you'll find the definition, which you are.";
+            Insults[65] = "Even a broken clock is right twice a day.";
+            Insults[66] = "You are either proof evolution is wrong or a disguised monkey.";
+            Insults[67] = "You’re as classless as a marxist utopia.";
+            Insults[68] = "Congratulations on defying natural selection for so long.";
+            Insults[69] = "Your existence bewilders me. I hope you're glad to still be around, 'cause I’m not.";
+            Insults[70] = "It must be exhausting to use your entire vocabulary in one sentence.";
+            Insults[71] = "The only reason I'm not your father is because your mother didn't have change for ten bucks.";
+
+            Random random = new Random();
+            int num = random.Next(0, 72);
+
+            string Result = Insults[num];
+            return Result;
+        }
+
+        public static void Text()
+        {
+            Console.WriteLine("\"please abuse me/press ENTER\" For more insults \n\"Fuck this/im out\" for pussies");
+        }
+
+        public static void Choice(string Result)
+        {
+            string Entry = Console.ReadLine();
+           
+            if (Entry.Equals("", StringComparison.OrdinalIgnoreCase) || Entry.Equals("please abuse me", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine(Result);
+                Console.ResetColor();
+                Console.ReadLine();
+                Console.Clear();
+                Again();
+            }
+            else if (Entry.Equals("fuck this", StringComparison.OrdinalIgnoreCase) || Entry.Equals("im out", StringComparison.OrdinalIgnoreCase))
+            {
+                System.Environment.Exit(0);
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Are you mentaly disabled? Can't you follow simple instructions without using all your brain capacity??");
+                Console.WriteLine("Whatever, this program is going to close after you press ENTER.");
+                Console.ReadLine();
+                System.Environment.Exit(0);
+            }
+        }
+
+        public static void Again()
+        {
+            Text();
+            Abuser();
+            Choice(Abuser());   
+        }
+
+        static void Main(string[] args)
+        {
+            Console.Title = "InsultGenerator2000";
+            Start();
+            Again();
+        }
+    }
+}
