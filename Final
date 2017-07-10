@@ -8,15 +8,61 @@ namespace InsultGenerator2000
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            Console.Title = "InsultGenerator2000";
+            Start();
+            Again();
+        }
+        
         public static void Start()
         {
             Console.WriteLine("Welcome to the InsultGenerator2000 \nIf you're a pussy, close this.\nEnter \"please abuse me\" if you want to generate insults. \nIf you're a coward, type \"fuck this\" or \"im out\".");
             Abuser();
             Choice(Abuser());
-
+            
             Console.Clear();
         }
+        
+        public static void Again()
+        {
+            Text();
+            Abuser();
+            Choice(Abuser());   
+        }
+        
+        public static void Text()
+        {
+            Console.WriteLine("\"please abuse me/press ENTER\" For more insults \n\"Fuck this/im out\" for pussies");
+        }
 
+        public static void Choice(string Result)
+        {
+            string Entry = Console.ReadLine();
+           
+            if (Entry.Equals("", StringComparison.OrdinalIgnoreCase) || Entry.Equals("please abuse me", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine(Result);
+                Console.ResetColor();
+                Console.ReadLine();
+                Console.Clear();
+                Again();
+            }
+            else if (Entry.Equals("fuck this", StringComparison.OrdinalIgnoreCase) || Entry.Equals("im out", StringComparison.OrdinalIgnoreCase))
+            {
+                System.Environment.Exit(0);
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Are you mentaly disabled? Can't you follow simple instructions without using all your brain capacity??");
+                Console.WriteLine("Whatever, this program is going to close after you press ENTER.");
+                Console.ReadLine();
+                System.Environment.Exit(0);
+            }
+        }
+        
         public static string Abuser()
         {
             string[] Insults = new string[72];
@@ -95,55 +141,8 @@ namespace InsultGenerator2000
 
             Random random = new Random();
             int num = random.Next(0, 72);
-
             string Result = Insults[num];
             return Result;
-        }
-
-        public static void Text()
-        {
-            Console.WriteLine("\"please abuse me/press ENTER\" For more insults \n\"Fuck this/im out\" for pussies");
-        }
-
-        public static void Choice(string Result)
-        {
-            string Entry = Console.ReadLine();
-           
-            if (Entry.Equals("", StringComparison.OrdinalIgnoreCase) || Entry.Equals("please abuse me", StringComparison.OrdinalIgnoreCase))
-            {
-                Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine(Result);
-                Console.ResetColor();
-                Console.ReadLine();
-                Console.Clear();
-                Again();
-            }
-            else if (Entry.Equals("fuck this", StringComparison.OrdinalIgnoreCase) || Entry.Equals("im out", StringComparison.OrdinalIgnoreCase))
-            {
-                System.Environment.Exit(0);
-            }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine("Are you mentaly disabled? Can't you follow simple instructions without using all your brain capacity??");
-                Console.WriteLine("Whatever, this program is going to close after you press ENTER.");
-                Console.ReadLine();
-                System.Environment.Exit(0);
-            }
-        }
-
-        public static void Again()
-        {
-            Text();
-            Abuser();
-            Choice(Abuser());   
-        }
-
-        static void Main(string[] args)
-        {
-            Console.Title = "InsultGenerator2000";
-            Start();
-            Again();
         }
     }
 }
